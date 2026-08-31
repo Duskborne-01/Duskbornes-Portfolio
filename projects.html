@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Duskborne's Portfolio - Projects</title>
+
+    <link rel="stylesheet" href="./projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Arhaan's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
+            <li>
+              <a href="./settings.html" class="settings-link" title="Settings"
+                ><i class="fa-solid fa-gear settings-gear"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="projects-main">
+      <section class="projects-hero">
+        <span class="text-gray">Explore My Work</span>
+        <h1>Featured <span class="purple">Projects</span></h1>
+        <p>
+          A dynamic collection of web applications, tools, and 2D experiences
+          built with code. More projects coming soon.
+        </p>
+      </section>
+
+      <section class="projects-container">
+        <div class="projects-grid" id="projectsGrid">
+          <div
+            class="project-card"
+            data-project-url="http://duskborne-01.github.io/To-Do-List"
+          >
+            <div class="project-content">
+              <h3>To-Do List App</h3>
+              <p>
+                A clean, responsive task management tool designed to track daily
+                goals, boost productivity, and organize workflows efficiently.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a
+                href="http://duskborne-01.github.io/To-Do-List"
+                target="_blank"
+                class="project-btn"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="project-card"
+            data-project-url="http://duskborne-01.github.io/Sound-Waves"
+          >
+            <div class="project-content">
+              <h3>Sound Waves</h3>
+              <p>
+                An interactive audio-visual web experience featuring responsive
+                frequency layouts and dynamic user input controls.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a
+                href="http://duskborne-01.github.io/Sound-Waves"
+                target="_blank"
+                class="project-btn"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        &copy; 2026 Copyright. All Rights Reserved. <br />
+        Made by <span>Duskborne</span> and <span>Arhaan</span>
+      </div>
+    </footer>
+
+    <script src="./projects.js"></script>
+  </body>
+</html>

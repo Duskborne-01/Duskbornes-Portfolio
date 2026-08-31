@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duskborne's Portfolio - Settings</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./settings.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <a href="./index.html" class="brand-link">Arhaan's Portfolio</a>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
+            <li>
+              <a
+                href="./settings.html"
+                class="settings-link active-settings"
+                title="Settings"
+                ><i class="fa-solid fa-gear settings-gear"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="settings-main">
+      <section class="settings-hero">
+        <span class="text-gray">Control Center</span>
+        <h1>Portfolio <span class="purple">Settings</span></h1>
+        <p>
+          Customize your viewing experience, configure interface aesthetics,
+          inspect system metadata, view portfolio credits, and manage
+          interactive states.
+        </p>
+      </section>
+
+      <div class="settings-container">
+        <aside class="settings-sidebar">
+          <ul>
+            <li>
+              <a
+                href="#appearance"
+                class="tab-link active"
+                data-tab="appearance"
+                ><i class="fa-solid fa-palette"></i> Appearance & Themes</a
+              >
+            </li>
+            <li>
+              <a href="#typography" class="tab-link" data-tab="typography"
+                ><i class="fa-solid fa-font"></i> Typography & Fonts</a
+              >
+            </li>
+            <li>
+              <a href="#animations" class="tab-link" data-tab="animations"
+                ><i class="fa-solid fa-wand-magic-sparkles"></i> Animations &
+                FX</a
+              >
+            </li>
+            <li>
+              <a href="#sound" class="tab-link" data-tab="sound"
+                ><i class="fa-solid fa-volume-high"></i> Sound & Feedback</a
+              >
+            </li>
+            <li>
+              <a href="#storage" class="tab-link" data-tab="storage"
+                ><i class="fa-solid fa-database"></i> Cache & Storage</a
+              >
+            </li>
+            <li>
+              <a href="#credits" class="tab-link" data-tab="credits"
+                ><i class="fa-solid fa-circle-info"></i> Credits & About</a
+              >
+            </li>
+          </ul>
+        </aside>
+
+        <div class="settings-content">
+          <div id="appearance" class="settings-panel active-panel">
+            <h2>Appearance & Themes</h2>
+            <p class="panel-desc">
+              Choose your preferred visual theme mode for navigation and
+              background accents.
+            </p>
+
+            <div class="option-group">
+              <label>Color Theme Mode</label>
+              <div class="theme-buttons">
+                <button class="theme-btn active-theme" data-theme="midnight">
+                  Midnight Space (Default)
+                </button>
+                <button class="theme-btn" data-theme="cyberpunk">
+                  Cyberpunk Neon
+                </button>
+                <button class="theme-btn" data-theme="emerald">
+                  Emerald Matrix
+                </button>
+                <button class="theme-btn" data-theme="light">
+                  Clean Light
+                </button>
+              </div>
+            </div>
+
+            <div class="option-group">
+              <label for="accentColorPicker">Custom Accent Glow Color</label>
+              <div class="color-picker-wrapper">
+                <input type="color" id="accentColorPicker" value="#aa6be4" />
+                <span id="colorHexCode">#aa6be4</span>
+                <button id="resetColorBtn" class="sub-btn">
+                  Reset Default
+                </button>
+              </div>
+            </div>
+
+            <div class="option-group toggle-row">
+              <div>
+                <strong>High Contrast Mode</strong>
+                <p>Enhance visibility boundaries across cards and inputs.</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="highContrastToggle" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+          <div id="typography" class="settings-panel">
+            <h2>Typography Settings</h2>
+            <p class="panel-desc">
+              Modify font families and scaling factors for all documents across
+              the platform.
+            </p>
+
+            <div class="option-group">
+              <label for="fontFamilySelect">Primary Interface Font</label>
+              <select id="fontFamilySelect">
+                <option value="'Poppins', sans-serif">Poppins (Default)</option>
+                <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                  Segoe UI
+                </option>
+                <option value="'Courier New', Courier, monospace">
+                  Monospace Code
+                </option>
+                <option value="'Georgia', serif">Georgia Serif</option>
+              </select>
+            </div>
+
+            <div class="option-group">
+              <label for="fontSizeRange">Global Font Scale Modifier</label>
+              <div class="range-wrapper">
+                <input
+                  type="range"
+                  id="fontSizeRange"
+                  min="85"
+                  max="115"
+                  value="100"
+                />
+                <span id="fontSizeVal">100%</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="animations" class="settings-panel">
+            <h2>Animations & Visual FX</h2>
+            <p class="panel-desc">
+              Manage interactive transition speeds, cursor effects, and layout
+              motions.
+            </p>
+
+            <div class="option-group toggle-row">
+              <div>
+                <strong>Enable Card Hover Transitions</strong>
+                <p>
+                  Smooth vertical floating elevations when hovering project or
+                  service cards.
+                </p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="cardMotionToggle" checked />
+                <span class="slider round"></span>
+              </label>
+            </div>
+
+            <div class="option-group toggle-row">
+              <div>
+                <strong>Gear Spin Physics</strong>
+                <p>
+                  Maintain the 360-degree rotation transition on nav settings
+                  icons.
+                </p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="gearSpinToggle" checked />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+          <div id="sound" class="settings-panel">
+            <h2>Sound & Audio Feedback</h2>
+            <p class="panel-desc">
+              Configure auditory responses when clicking buttons or submitting
+              forms.
+            </p>
+
+            <div class="option-group toggle-row">
+              <div>
+                <strong>UI Click Audio Effects</strong>
+                <p>
+                  Play synthetic sound clicks when triggering interactive
+                  buttons.
+                </p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="soundToggle" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+          <div id="storage" class="settings-panel">
+            <h2>Cache & Local Storage</h2>
+            <p class="panel-desc">
+              Manage user session settings and local state persistence.
+            </p>
+
+            <div class="option-group storage-actions">
+              <div>
+                <strong>Clear Saved Preferences</strong>
+                <p>
+                  Wipe all custom stored theme settings and return to factory
+                  defaults.
+                </p>
+              </div>
+              <button id="clearStorageBtn" class="danger-btn">
+                Clear Storage
+              </button>
+            </div>
+          </div>
+
+          <div id="credits" class="settings-panel">
+            <h2>Portfolio Credits & Metadata</h2>
+            <p class="panel-desc">
+              System specification details and development authorship logs.
+            </p>
+
+            <div class="credits-box">
+              <p>
+                <strong>Primary Developer & Author:</strong> Arhaan Gour
+                (Duskborne)
+              </p>
+              <p><strong>GitHub Repository:</strong> duskborne-01</p>
+              <p>
+                <strong>Framework Build:</strong> Vanilla HTML5, CSS3, & Modern
+                ES6+ JavaScript
+              </p>
+              <p>
+                <strong>Design Architecture:</strong> Modular Responsive Grid
+                Layouts with Dynamic DOM Injection
+              </p>
+              <p>
+                <strong>Copyright Notice:</strong> &copy; 2026 All Rights
+                Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        &copy; 2026 Copyright. All Rights Reserved. <br />
+        Made by <span>Duskborne</span> and <span>Arhaan</span>
+      </div>
+    </footer>
+
+    <script src="./settings.js"></script>
+  </body>
+</html>

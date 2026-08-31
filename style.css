@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgb(153, 153, 226);
+}
+
+.brand-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.brand-link:hover {
+    color: rgb(170, 107, 228);
+}
+
+.settings-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-gear {
+    font-size: 1.2rem;
+    color: white;
+    transition: transform 0.6s ease, color 0.2s ease;
+}
+
+.settings-link:hover .settings-gear {
+    transform: rotate(-360deg);
+    color: rgb(170, 107, 228);
+}
+
+.settings-gear {
+    transform: rotate(0deg);
+}
+
+main hr {
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 60px 84px;
+}
+
+.left {
+  font-size: 1.5rem;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 130px 0;
+}
+
+.firstSection > div {
+  /* width: 30%; */
+}
+
+.leftSection {
+  font-size: 3rem;
+}
+
+.rightSection {
+  width: 30%;
+}
+
+.rightSection img {
+  width: 80%;
+}
+
+.purple {
+  color: rgb(170, 107, 228);
+}
+
+.text-gray {
+  color: gray;
+}
+
+#element {
+  color: rgb(170, 107, 228);
+}
+
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+}
+
+.secondSection h1 {
+  font-size: 1.9rem;
+}
+
+.secondSection .box {
+  background: white;
+  width: 76.2vw;
+  height: 2px;
+  margin: 56px 0;
+  display: flex;
+}
+
+.secondSection .box .vertical {
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0 125px;
+}
+
+.image-top {
+  width: 23px;
+  position: relative;
+  top: -32px;
+  left: -9px;
+}
+
+.vertical-title {
+  position: relative;
+  top: 75px;
+  width: 150px;
+  font-size: 14px;
+}
+
+.vertical-desc {
+  position: relative;
+  top: 86px;
+  color: gray;
+  width: 150px;
+  font-size: 9px;
+}
+
+.footer {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer span {
+  font-family: cursive, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .firstSection {
+    flex-direction: column;
+    margin: 50px 20px;
+    text-align: center;
+  }
+
+  .leftSection {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .rightSection {
+    width: 60%;
+  }
+
+  .secondSection {
+    max-width: 90vw;
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .secondSection .box {
+    flex-direction: column;
+    background: transparent;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .secondSection .box .vertical {
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    margin: 30px 0;
+    border-left: 2px solid white;
+    padding-left: 20px;
+  }
+
+  .image-top {
+    position: static;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .vertical-title,
+  .vertical-desc {
+    position: static;
+    width: 100%;
+  }
+
+  .footer {
+    position: relative;
+  }
+}

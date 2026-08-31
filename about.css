@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgb(153, 153, 226);
+}
+
+.brand-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.brand-link:hover {
+    color: rgb(170, 107, 228);
+}
+
+.settings-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-gear {
+    font-size: 1.2rem;
+    color: white;
+    transition: transform 0.6s ease, color 0.2s ease;
+}
+
+.settings-link:hover .settings-gear {
+    transform: rotate(-360deg);
+    color: rgb(170, 107, 228);
+}
+
+.settings-gear {
+    transform: rotate(0deg);
+}
+
+.about-main {
+  max-width: 80vw;
+  margin: 50px auto 120px auto;
+}
+
+.about-main section {
+  margin-bottom: 80px;
+}
+
+.text-gray {
+  color: gray;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.purple {
+  color: rgb(170, 107, 228);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 10px 0 20px 0;
+}
+
+.hero p,
+.journey-box p,
+.skill-card p,
+.hobby-card p {
+  color: rgb(200, 200, 220);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.journey h2,
+.skills h2 {
+  font-size: 2rem;
+  margin: 10px 0 30px 0;
+}
+
+.journey-box {
+  background-color: rgb(18, 18, 62);
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid rgb(170, 107, 228);
+}
+
+.skills-grid {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.skill-card,
+.hobby-card {
+  flex: 1;
+  background-color: rgb(18, 18, 62);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card h3,
+.hobby-card h3 {
+  font-size: 1.3rem;
+  color: rgb(170, 107, 228);
+  margin-bottom: 15px;
+}
+
+.hero p:hover,
+.journey-box:hover,
+.skill-card:hover,
+.hobby-card:hover {
+  transform: translateY(-5px);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(170, 107, 228, 0.2);
+}
+
+.footer {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer span {
+  font-family: cursive, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .about-main {
+    max-width: 90vw;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Duskborne's Portfolio - Contact Me</title>
+
+    <link rel="stylesheet" href="./contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Arhaan's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
+            <li>
+              <a href="./settings.html" class="settings-link" title="Settings"
+                ><i class="fa-solid fa-gear settings-gear"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="contact-main">
+      <section class="contact-hero">
+        <span class="text-gray">Get In Touch</span>
+        <h1>Contact <span class="purple">Me</span></h1>
+        <p>
+          Have a project in mind, a question about our services, or just want to
+          chat? Drop a message below or connect via social media.
+        </p>
+      </section>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Direct Info</h3>
+          <p><strong>Name:</strong> Arhaan Gour (Duskborne)</p>
+          <p><strong>Phone / WhatsApp:</strong> +91 9756460040</p>
+          <p><strong>Email:</strong> arhaangour777@gmail.com</p>
+
+          <h3 class="social-heading">Connect Socially</h3>
+          <div class="social-links-list">
+            <a
+              href="https://instagram.com/choudhary_arhaan_gour"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i> Instagram</a
+            >
+            <a href="https://wa.me/919756460040" target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i> WhatsApp</a
+            >
+            <a href="https://github.com/duskborne-01" target="_blank"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fa-brands fa-twitter"></i> Twitter</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fa-brands fa-discord"></i> Discord</a
+            >
+          </div>
+        </div>
+
+        <div class="contact-form-box">
+          <h3>Send a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="senderName">Your Name</label>
+              <input type="text" id="senderName" value="Visitor" required />
+            </div>
+            <div class="form-group">
+              <label for="senderEmail">Your Email</label>
+              <input
+                type="email"
+                id="senderEmail"
+                placeholder="Enter your email ID"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="msgSubject">Subject</label>
+              <input
+                type="text"
+                id="msgSubject"
+                value="General Inquiry / Project Collaboration"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="msgBody">Message</label>
+              <textarea id="msgBody" rows="5" required>
+                Hi Arhaan, I checked out your portfolio and would like to discuss a potential project with you.</textarea
+              >
+            </div>
+            <button type="submit" class="submit-btn">
+              Send Message via Email
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        &copy; 2026 Copyright. All Rights Reserved. <br />
+        Made by <span>Duskborne</span> and <span>Arhaan</span>
+      </div>
+    </footer>
+
+    <script src="./contact.js"></script>
+  </body>
+</html>
