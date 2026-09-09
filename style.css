@@ -297,7 +297,7 @@ main hr {
     /* padding: 20px 0; */
     margin-left: auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    animation: slideDown 0.8s ease forwards backwards;
+    animation: slideDown 0.8s ease forwards;
     z-index: 1000;
   }
 
@@ -397,9 +397,9 @@ main hr {
 @media screen and (max-width: 992px) {
   .footer {
     left: 0;
-    top: 2000px;
+    /* top: 2000px; */
     position: absolute;
-    /* top: auto; */
+    top: auto;
   }
   .footer .top {
     flex-direction: column;
@@ -495,15 +495,21 @@ main hr {
 }
 
 @media screen and (max-width: 480px) {
+  nav ul.nav-active {
+    flex-direction: column !important;
+  }
+  
   .rightSection img {
     width: 150px;
   }
 
   main hr {
-    width: 140px;
+    width: auto;
   }
 
   .footer {
+    right: 0;
+    left: 0;
     font-size: 12px;
   }
 
