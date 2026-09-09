@@ -323,7 +323,7 @@ main hr {
     position: relative;
     display: inline-block;
     bottom: 50px;
-    left: 286px;
+    left: 160px;
   }
 
   nav ul.nav-active li #extra .row {
@@ -336,7 +336,7 @@ main hr {
   nav .left {
     position: relative;
     top: 4px;
-    right: 225px;
+    right: 80px;
   }
 
   .leftSection {
